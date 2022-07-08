@@ -1,12 +1,28 @@
-import { Peliculas } from "./componetes/Peliculas";
 import styles from "./App.module.css";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import { DetallesPeli } from "./paginas/DetallesPeli";
+import { PaginaInicio } from "./paginas/PaginaInicio";
 
 export function App() {
-    return <div>
-        <header className={styles.titulo}><h1>Peliculas</h1> </header>
-        <main>
-            <Peliculas />
-        </main>
-    </div>
+    return (
+        <Router>
+            <header className={styles.titulo}> <Link to="/"><h1 className={styles.h1}>Peliculas</h1></Link></header>
+            <main>
+                <Switch>
+                    <Route path="/pelis/:idpeli">
+                        <DetallesPeli />
+                    </Route>
+                    <Route path="/">
+                        <PaginaInicio />
+                    </Route>
+                </Switch>
+            </main>
+        </Router >
+    );
 }
 

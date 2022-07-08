@@ -1,6 +1,10 @@
 .titulo {
     font-size: 2rem;
-    color: aliceblue;
-    text-shadow: -4px 3px 0 #b761b7;
+    color: rgb(236, 246, 255);
+    text-shadow: -4px 3px 0 #9e669e;
     text-align: center;
+}
+
+.h1 {
+    margin-bottom: 10px;
 }
