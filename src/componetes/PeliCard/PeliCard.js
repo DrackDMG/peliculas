@@ -6,7 +6,7 @@ export function PeliCard({ peli }) {
     <li className={styles.peliCard}>
       <Link to={"/pelis/" + peli.id}>
         <img className={styles.peliImg} src={imgurl} alt={peli.title} />
-        <div>{peli.title}</div>
+        <div className={styles.titulo}>{peli.title}</div>
       </Link>
     </li>
   );

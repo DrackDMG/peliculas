@@ -11,13 +11,22 @@
 .peliImg {
     border-radius: 10px;
     background-color: azure;
-    width: 230px;
-    height: 345px;
+    width: 180px;
+    height: 270px;
+}
+
+.titulo {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 @media(max-width: 560px) {
     .peliImg {
         width: 90%;
-        height: auto;
+        height: 77%;
+    }
+
+    .titulo {
+        font-size: .9rem;
     }
 }
