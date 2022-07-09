@@ -5,17 +5,20 @@
 }
 
 .col {
-    max-width: 400px;
+    max-width: 420px;
     margin: 15px;
     height: auto;
     height: 80%;
 }
 
 .peliImg {
+    width: auto;
+    height: 550px;
     border-radius: 15px;
 }
 
 .detalles {
+    text-align: justify;
     font-size: 1.3rem;
 }
 
@@ -23,9 +26,10 @@
     margin-top: 0;
 }
 
+
 @media(max-width: 560px) {
     .col {
-        width: 90%;
+        width: 85%;
         height: auto;
     }
 }

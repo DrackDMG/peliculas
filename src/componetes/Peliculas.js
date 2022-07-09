@@ -9,7 +9,7 @@ export function Peliculas() {
     const [pelis, setPelis] = useState([]);
 
     useEffect(() => {
-        get("/discover/movie")
+        get("/discover/movie?&language=es")
             .then((data) => {
                 setPelis(data.results);
             });

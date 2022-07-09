@@ -7,9 +7,10 @@ export function DetallesPeli() {
     const [peli, setPeli] = useState(null);
 
     useEffect(() => {
-        get("/movie/" + idpeli)
+        get("/movie/" + idpeli + "?&language=es")
             .then((data) => {
                 setPeli(data)
+                console.log(data);
             });
     }, [idpeli]);
 

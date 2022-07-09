@@ -1,9 +1,10 @@
 import styles from "./App.module.css";
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Redirect
 } from "react-router-dom";
 import { DetallesPeli } from "./paginas/DetallesPeli";
 import { PaginaInicio } from "./paginas/PaginaInicio";
@@ -14,11 +15,14 @@ export function App() {
             <header className={styles.titulo}> <Link to="/"><h1 className={styles.h1}>Peliculas</h1></Link></header>
             <main>
                 <Switch>
-                    <Route path="/pelis/:idpeli">
+                    <Route exact path="/pelis/:idpeli">
                         <DetallesPeli />
                     </Route>
-                    <Route path="/">
+                    <Route exact path="/">
                         <PaginaInicio />
+                    </Route>
+                    <Route path='*'>
+                        <Redirect to="/" />
                     </Route>
                 </Switch>
             </main>
