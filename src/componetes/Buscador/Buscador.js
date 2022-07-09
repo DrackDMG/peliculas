@@ -1,11 +1,19 @@
 import styles from './Buscador.module.css';
 import { FaSearch } from 'react-icons/fa'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useQuery } from '../../hooks/useQuery';
 
 export function Buscador() {
+    const query = useQuery();
+    const search = query.get("search");
+
     const [buscador, setbuscador] = useState("");
     const history = useHistory();
+
+    useEffect(() => {
+        setbuscador(search || "")
+    }, [search]);
 
     const handleSumnit = (e) => {
         e.preventDefault();

@@ -1,10 +1,30 @@
 .titulo {
     font-size: 2rem;
     color: rgb(236, 246, 255);
-    text-shadow: -4px 3px 0 #9e669e;
+    text-shadow: 0 0 8px #ebbed4;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 5.3rem;
+    margin-top: 10px;
 }
 
 .h1 {
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media(max-width: 560px) {
+
+    .h1 {
+        margin: 15px 6px;
+    }
+
+    .titulo {
+        justify-content: space-around;
+        padding: 0 1rem;
+        margin-bottom: 8px;
+    }
 }

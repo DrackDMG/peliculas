@@ -8,17 +8,27 @@
 }
 
 .busInput {
+    font-size: 1.2rem;
     height: 30px;
     border-radius: 10px;
     padding: 5px 30px 5px 10px;
+    border: 1px solid white;
+}
+
+.busInput:focus,
+.busBoton:focus {
+    outline: none;
+    border: 1px solid #f88ec2;
+    box-shadow: 0 0 5px #ebbed4;
 }
 
 .busBoton {
+    padding: 0 5px;
     position: absolute;
-    right: 0;
+    right: 7px;
     height: 100%;
     border: none;
     background: none;
-    top: 0;
+    top: 5px;
     cursor: pointer;
 }

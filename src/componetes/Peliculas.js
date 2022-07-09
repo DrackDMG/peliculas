@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useQuery } from "../hooks/useQuery";
 import { get } from "../utils/httpcliente";
 import { Cargando } from "./Cargando/Cargando";
 import { PeliCard } from "./PeliCard/PeliCard";
 import styles from "./Peliculas.module.css";
 
-function useQuery() {
-    return new URLSearchParams(useLocation().search);
-}
+
 
 export function Peliculas() {
     const [pelis, setPelis] = useState([]);

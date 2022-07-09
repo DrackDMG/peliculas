@@ -23,7 +23,26 @@
 }
 
 .p1 {
-    margin-top: 0;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+
+.fecha {
+    color: #fafafa;
+    opacity: 50%;
+    margin: 1px auto;
+    font-size: 1.5rem;
+}
+
+.p2 {
+    font-size: 1.4rem;
+}
+
+.p3 {
+    font-size: 1.15rem;
+    line-height: 26px;
 }
 
 @media(max-width: 560px) {
