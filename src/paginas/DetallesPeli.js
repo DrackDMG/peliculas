@@ -24,10 +24,7 @@ export function DetallesPeli() {
             .then((data) => {
                 <Peliculas />
             });
-
     }, [search]);
-
-
 
     useEffect(() => {
         setIsLoad(true);

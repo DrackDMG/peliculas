@@ -8,7 +8,6 @@ export function Buscador() {
     const search = query.get("search");
     const history = useHistory();
 
-
     const handleSumnit = (e) => {
         e.preventDefault();
     }
@@ -20,7 +19,6 @@ export function Buscador() {
                     onChange={(e) => {
                         const value = e.target.value;
                         history.push('/?search=' + value);
-
                     }} />
                 <FaSearch size={20} className={styles.busBoton} />
             </div>

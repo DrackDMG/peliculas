@@ -7,8 +7,6 @@ import styles from "./Peliculas.module.css";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { SinResultados } from "./SinResultados/SinResultados";
 
-
-
 export function Peliculas({ search }) {
     const [pelis, setPelis] = useState([]);
     const [isLoad, setIsLoad] = useState(true);
@@ -24,13 +22,11 @@ export function Peliculas({ search }) {
                 setHasMore(data.page < data.total_pages);
                 setIsLoad(false);
             });
-
     }, [search, pagina]);
 
     if (!isLoad && pelis.length === 0) {
         return <SinResultados />
     }
-
 
     return (
         <InfiniteScroll dataLength={pelis.length} hasMore={hasMore} next={() => setPagina((prevPage) => prevPage + 1)} loader={<Cargando />}>
