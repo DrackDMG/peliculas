@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #020f17;
-  color: antiquewhite;
+  background-color: #fafafa;
+  color: rgb(0, 0, 0);
 }
 
 code {
@@ -16,5 +16,5 @@ code {
 
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(32, 33, 35);
 }

@@ -1,0 +1,12 @@
+.res {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+@media(max-width: 560px) {
+    .res {
+        font-size: 1.2rem;
+    }
+}

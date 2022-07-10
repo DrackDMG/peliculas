@@ -2,10 +2,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 15px 0;
 }
 
+
+
 .col {
-    max-width: 420px;
+    max-width: 430px;
     margin: 15px;
     height: auto;
     height: 80%;
@@ -26,11 +29,11 @@
     margin: 0 auto;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.1px;
+    line-height: 40px;
 }
 
 .fecha {
-    color: #fafafa;
+    color: #010101;
     opacity: 50%;
     margin: 1px auto;
     font-size: 1.5rem;
@@ -46,8 +49,35 @@
 }
 
 @media(max-width: 560px) {
+    .contImg {
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        height: auto;
+        max-width: 400px;
+    }
+
     .col {
         width: 85%;
         height: auto;
+    }
+
+    .p1 {
+        font-size: 1.65rem;
+        line-height: 28px;
+    }
+
+    .fecha {
+        font-size: 1.2rem;
+    }
+
+    .p2 {
+        font-size: 1.1rem;
+        line-height: 20px;
+    }
+
+    .p3 {
+        font-size: 1rem;
+        line-height: 20px;
     }
 }

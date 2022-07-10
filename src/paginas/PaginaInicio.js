@@ -1,9 +1,12 @@
 
 import { Peliculas } from "../componetes/Peliculas";
+import { useDebounce } from "../hooks/useDebounce";
+import { useQuery } from "../hooks/useQuery";
 
 export function PaginaInicio() {
-    return <div>
+    const query = useQuery();
+    const search = query.get("search");
+    const useDebounceSearch = useDebounce(search, 100);
 
-        <Peliculas />
-    </div>
+    return <Peliculas key={search} search={useDebounceSearch} />
 }
