@@ -53,10 +53,12 @@ export function DetallesPeli() {
         <div className={styles.col + " " + styles.contImg}><img className={styles.contImg + " " + styles.peliImg} src={imgurl} alt={peli.title}></img></div>
         <div className={styles.col + " " + styles.detalles}>
             <p className={styles.p1}> {peli.title}</p>
-            <div style={{ width: 50, height: 50, margin: 10 }}>
-                <CircularProgressbar value={peli.vote_average * 10} text={peli.vote_average * 10} />
+            <div className={styles.cont2}>
+                <div className={styles.progress}>
+                    <CircularProgressbar value={peli.vote_average * 10} text={peli.vote_average * 10} />
+                </div>
+                <p className={styles.fecha}> {peli.release_date}</p>
             </div>
-            <p className={styles.fecha}> {peli.release_date}</p>
             <p className={styles.p2}><b>Genero: </b> {peli.genres.map(genero => genero.name).join(", ")}</p>
             <p className={styles.p3}><b>Sinopsis:</b> {peli.overview}</p>
         </div>
