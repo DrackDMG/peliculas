@@ -1,0 +1,23 @@
+.stick1 {
+    position: fixed;
+    bottom: -50px;
+    background-color: #010911;
+    min-height: 50px;
+    color: aliceblue;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 560px) {
+
+    .stick1 {
+        font-size: .8rem;
+        min-height: 35px;
+        bottom: 0;
+    }
+}

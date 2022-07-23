@@ -28,7 +28,7 @@ export function Peliculas({ search }) {
         return <SinResultados />
     }
 
-    return (
+    return (<>
         <InfiniteScroll dataLength={pelis.length} hasMore={hasMore} next={() => setPagina((prevPage) => prevPage + 1)} loader={<Cargando />}>
             <ul className={styles.peliGrid}>
                 {pelis.map((peli) => (
@@ -36,6 +36,8 @@ export function Peliculas({ search }) {
                 ))}
             </ul>
         </InfiniteScroll>
+
+    </>
     );
 
 } 

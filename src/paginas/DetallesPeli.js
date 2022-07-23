@@ -32,7 +32,6 @@ export function DetallesPeli() {
             .then((data) => {
                 setPeli(data)
                 setIsLoad(false);
-                console.log(data);
             });
     }, [idpeli]);
 

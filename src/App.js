@@ -9,6 +9,7 @@ import {
 import { DetallesPeli } from "./paginas/DetallesPeli";
 import { PaginaInicio } from "./paginas/PaginaInicio";
 import { Buscador } from "./componetes/Buscador/Buscador";
+import { PiePag } from "./componetes/Pie/PiePag";
 
 export function App() {
     return (
@@ -27,6 +28,7 @@ export function App() {
                     </Route>
                 </Switch>
             </main>
+            <PiePag />
         </Router >
     );
 }
